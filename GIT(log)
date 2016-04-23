@@ -9,3 +9,11 @@ git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
 --graph — отображает дерево коммитов в виде ASCII-графика
 --date=short — сохраняет формат даты коротким и симпатичным
 **********************************************************************
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
